@@ -1,14 +1,14 @@
 package model;
 
-public class Renter {
+public class Renter extends User{
     private String SecondCellPhone;
     private String adreess;
     private String city;
     private String numberOfCard;
     private String franquise;
 
-    public Renter(String secondCellPhone, String adreess, String city, String numberOfCard, String franquise) {
-        SecondCellPhone = secondCellPhone;
+    public Renter(String firstName, String lastName, String dniType, String dni, String principalCellphone, String role,String secondCellPhone, String adreess, String city, String numberOfCard, String franquise) {
+        super(firstName, lastName, dniType, dni, principalCellphone, role);
         this.adreess = adreess;
         this.city = city;
         this.numberOfCard = numberOfCard;

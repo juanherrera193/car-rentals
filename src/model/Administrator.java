@@ -1,12 +1,13 @@
 package model;
 
-public class Administrator {
+public class Administrator extends User {
     private String firstName;
     private String lastName;
     private String principalCellphone;
     private String role;
 
-    public Administrator(String firstName, String lastName, String principalCellphone, String role) {
+    public Administrator(String dniType, String dni, String firstName, String lastName, String principalCellphone, String role) {
+        super(firstName, lastName, dniType, dni, principalCellphone, role);
         this.firstName = firstName;
         this.lastName = lastName;
         this.principalCellphone = principalCellphone;

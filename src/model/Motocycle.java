@@ -1,9 +1,9 @@
 package model;
 
-public class motocicle extends Vehicle {
+public class Motocycle extends Vehicle {
     private int cylinderization;
 
-    public motocicle(String brand, String reference, Integer mileage, String model, double price, Integer availableQuantity, int cylinderization) {
+    public Motocycle(String brand, String reference, Integer mileage, String model, double price, Integer availableQuantity, int cylinderization) {
         super(brand, reference, mileage, model, price, availableQuantity);
         this.cylinderization = cylinderization;
     }

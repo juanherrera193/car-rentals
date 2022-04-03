@@ -1,6 +1,6 @@
 package model;
 
-//Super class for vehicle
+
 public class Vehicle {
     private String brand;
     private String reference;
@@ -9,7 +9,10 @@ public class Vehicle {
     private double price;
     private Integer availableQuantity;
 
-    //Constructor
+
+    public Vehicle(){
+
+    }
     public Vehicle(String brand, String reference, Integer mileage, String model, double price, Integer availableQuantity) {
         this.brand = brand;
         this.reference = reference;
@@ -19,7 +22,7 @@ public class Vehicle {
         this.availableQuantity = availableQuantity;
     }
 
-    //Getters and setters
+
     public String getBrand() {
         return brand;
     }

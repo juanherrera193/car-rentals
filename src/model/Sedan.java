@@ -7,6 +7,10 @@ public class Sedan extends Vehicle{
     private Boolean luggage;
     private String fuelType;
 
+    public Sedan(){
+        
+    }
+
     public Sedan(String brand, String reference, Integer mileage, String model, double price, Integer availableQuantity, int seats, Boolean luggage, String fuelType){
         super(brand, reference, mileage, model, price, availableQuantity);
         this.seats = seats;

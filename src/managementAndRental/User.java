@@ -1,17 +1,17 @@
-package model;
+package managementAndRental;
 
-//Super class that we can use as super class for administrator and renter
+
+import java.util.StringJoiner;
+
 public class User {
     private String firstName;
     private String lastName;
     private String dniType;
     private String dni;
-    private String principalCellphone;
+    private int principalCellphone;
     private String role;
 
-    public User(){}
-
-    public User(String firstName, String lastName, String dniType, String dni, String principalCellphone, String role) {
+      public User(String firstName, String lastName, String dniType, String dni, int principalCellphone, String role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dniType = dniType;
@@ -24,8 +24,8 @@ public class User {
         return firstName;
     }
 
-    public void setFirstName(String firtName) {
-        this.firstName = firtName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -52,11 +52,11 @@ public class User {
         this.dni = dni;
     }
 
-    public String getPrincipalCellphone() {
+    public int getPrincipalCellphone() {
         return principalCellphone;
     }
 
-    public void setPrincipalCellphone(String principalCellphone) {
+    public void setPrincipalCellphone(int principalCellphone) {
         this.principalCellphone = principalCellphone;
     }
 
@@ -69,14 +69,14 @@ public class User {
     }
 
     @Override
-    public String toString(){
-        return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", dniType='" + dniType + '\'' +
-                ", dni='" + dni + '\'' +
-                ", principalCellphone='" + principalCellphone + '\'' +
-                ", role='" + role + '\'' +
-                '}';
+    public String toString() {
+        return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
+                .add("firstName='" + firstName + "'")
+                .add("lastName='" + lastName + "'")
+                .add("dniType='" + dniType + "'")
+                .add("dni='" + dni + "'")
+                .add("principalCellphone=" + principalCellphone)
+                .add("role='" + role + "'")
+                .toString();
     }
 }

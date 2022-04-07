@@ -1,4 +1,6 @@
-package managementAndRental;
+package model.user;
+
+import model.user.User;
 
 public class Administrator extends User {
     private String firstName;

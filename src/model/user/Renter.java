@@ -1,6 +1,8 @@
-package managementAndRental;
+package model.user;
 
-public class Renter extends User{
+import model.user.User;
+
+public class Renter extends User {
     private int SecondCellPhone;
     private String adreess;
     private String city;

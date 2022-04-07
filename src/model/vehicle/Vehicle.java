@@ -1,6 +1,5 @@
-package model;
+package model.vehicle;
 
-//Super class for vehicle
 public class Vehicle {
     private String brand;
     private String reference;
@@ -9,7 +8,6 @@ public class Vehicle {
     private double price;
     private Integer availableQuantity;
 
-    //Constructor
     public Vehicle(String brand, String reference, Integer mileage, String model, double price, Integer availableQuantity) {
         this.brand = brand;
         this.reference = reference;
@@ -19,7 +17,6 @@ public class Vehicle {
         this.availableQuantity = availableQuantity;
     }
 
-    //Getters and setters
     public String getBrand() {
         return brand;
     }
@@ -55,12 +52,6 @@ public class Vehicle {
     }
     public void setAvailableQuantity(Integer availableQuantity) {
         this.availableQuantity = availableQuantity;
-    }
-
-    //toString
-    @Override
-    public String toString() {
-        return "Vehicle{" + "brand=" + brand + ", reference=" + reference + ", mileage=" + mileage + ", model=" + model + ", price=" + price + ", availableQuantity=" + availableQuantity + '}';
     }
 
 

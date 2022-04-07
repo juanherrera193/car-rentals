@@ -1,6 +1,4 @@
-package model;
-
-import java.util.Objects;
+package model.vehicle;
 
 public class Truck extends Vehicle {
     Boolean luggage;
@@ -36,10 +34,5 @@ public class Truck extends Vehicle {
 
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
-    }
-
-    @Override
-    public String toString() {
-        return "Truck{" + "luggage=" + luggage + ", seats=" + seats + ", fuelType=" + fuelType + '}';
     }
 }

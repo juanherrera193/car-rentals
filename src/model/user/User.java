@@ -1,4 +1,4 @@
-package managementAndRental;
+package model.user;
 
 
 import java.util.StringJoiner;
@@ -66,17 +66,5 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    @Override
-    public String toString() {
-        return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
-                .add("firstName='" + firstName + "'")
-                .add("lastName='" + lastName + "'")
-                .add("dniType='" + dniType + "'")
-                .add("dni='" + dni + "'")
-                .add("principalCellphone=" + principalCellphone)
-                .add("role='" + role + "'")
-                .toString();
     }
 }

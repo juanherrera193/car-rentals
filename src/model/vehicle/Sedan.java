@@ -1,6 +1,4 @@
-package model;
-
-import java.util.Objects;
+package model.vehicle;
 
 public class Sedan extends Vehicle{
     private int seats;
@@ -36,10 +34,5 @@ public class Sedan extends Vehicle{
 
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + "Sedan{" + "seats=" + seats + ", luggage=" + luggage + ", fuelType=" + fuelType + '}';
     }
 }

@@ -5,11 +5,7 @@ import entity.VehicleEntity;
 import java.util.List;
 
 public class VehicleRepository {
-    private final List<VehicleEntity> vehicles;
-
-    public VehicleRepository(List<VehicleEntity> vehicles) {
-        this.vehicles = vehicles;
-    }
+    private List<VehicleEntity> vehicles;
 
     public List<VehicleEntity> getVehicles() {
         return vehicles;

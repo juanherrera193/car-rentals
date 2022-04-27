@@ -1,8 +1,6 @@
 package model.user;
 
 
-import java.util.StringJoiner;
-
 public class User {
     private String firstName;
     private String lastName;
@@ -21,7 +19,7 @@ public class User {
     }
 
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     public void setFirstName(String firstName) {

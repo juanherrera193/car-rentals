@@ -1,7 +1,5 @@
 package model.user;
 
-import model.user.User;
-
 public class Renter extends User {
     private int SecondCellPhone;
     private String adreess;

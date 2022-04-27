@@ -1,7 +1,6 @@
 package entity;
 
 import entity.enumtype.TypeUser;
-import model.user.User;
 
 public class UserEntity {
     private Long id;
